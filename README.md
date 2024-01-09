@@ -1,15 +1,17 @@
 # **StableDiffusion - Generating AI Images with Stable Diffusion API**
 
-StableDiffusion for Nuke is a simple Nuke plugin that allows you to generate AI images using the stable diffusion API. This plugin is easy to use and can be integrated into your Nuke workflow seamlessly.
+StableDiffusion for Nuke is a simple Nuke script that allows you to generate AI images using the stable diffusion API. This script is easy to use and can be integrated into your Nuke workflow seamlessly.
 
 ## **Getting Started**
 
-### **Installing Python and Requests Module**
+### **Installing Python and Necessary Modules**
 
 1. Visit the official Python website and download the latest version of Python: **[https://www.python.org/downloads/](https://www.python.org/downloads/)**
 2. Run the Python installer and follow the installation wizard to install Python on your system. Remember to select the option to add Python to your system PATH during installation.
 3. Open a command prompt or terminal and install the Requests module with the following command: **`pip install requests`**
 4. Wait for the installation to complete.
+5. To be able to use the Animation SDK we need to install the **`pip install stability_sdk`**
+6. Wait for the installation to complete.
 
 ### **Adding the Python Path to init.py file**
 
@@ -17,11 +19,16 @@ The init.py file is located under the path **`C:\Users\{USER}\.nuke`**, where **
 
 1. Open the file called **`init.py`** in a text editor.
 2. Add the following line to the **`init.py`** file, replacing the path with the path to your Python executable. For example:
-    
+
     **`nuke.pluginAddPath("C:/Users/{USER}/AppData/Local/Programs/Python/Python311/Lib/site-packages")`**
-    
+
 3. Save the **`init.py`** file.
 4. Close and reopen Nuke for the changes to take effect.
+
+### **Copying code to menu.py**
+
+For the new Logo to appear in the Stabilty node and the new Animation Props to appear and work properly in the Animation/Props tab, you need to copy the code from the menu.py file and paste it into the menu.py file in the .nuke folder.
+If there is no existing `menu.py` file in your `.nuke` folder, you can use the `menu.py` file from the downloaded files. If there is an existing `menu.py` file, append the code from the downloaded `menu.py` file to it.
 
 ### **Setting Up Stable Diffusion API**
 
@@ -50,6 +57,6 @@ If you plan on using StableDiffusion frequently, you can save it as a toolset fo
 2. Enter a name for the toolset and click "OK".
 3. The toolset will now be accessible from your toolbar. To use it, simply press 'Tab' and type the name.
 
-## **Conclusion**
+## **Disclaimer**
 
-StableDiffusion is a simple tool that allows you to generate AI images using the stable diffusion API directly within Nuke. By following the steps outlined in this readme, you can effortlessly incorporate it into your Nuke workflow and start generating AI images with just a few clicks.
+This project is a fun experiment and is not intended for production use. It may contain bugs and errors. Please use it with caution and at your own risk.
