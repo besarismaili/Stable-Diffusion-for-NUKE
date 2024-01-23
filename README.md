@@ -25,11 +25,6 @@ The init.py file is located under the path **`C:\Users\{USER}\.nuke`**, where **
 3. Save the **`init.py`** file.
 4. Close and reopen Nuke for the changes to take effect.
 
-### **Copying code to menu.py**
-
-For the new Logo to appear in the Stabilty node and the new Animation Props to appear and work properly in the Animation/Props tab, you need to copy the code from the menu.py file and paste it into the menu.py file in the .nuke folder.
-If there is no existing `menu.py` file in your `.nuke` folder, you can use the `menu.py` file from the downloaded files. If there is an existing `menu.py` file, append the code from the downloaded `menu.py` file to it.
-
 ### **Setting Up Stable Diffusion API**
 
 Before you can start using StableDiffusion, you need to set up the stable diffusion API.
